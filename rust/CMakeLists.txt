@@ -18,9 +18,8 @@ include(ExternalProject)
 
 set(RUST_SRC_DIR "${PROJECT_SOURCE_DIR}/rust")
 
-#set(RUST_TARGET "riscv32imac-unknown-none-elf")
-#set(RUST_TARGET "riscv32imc-unknown-none-elf")
-set(RUST_TARGET "thumbv7em-none-eabi")
+# Arch Examples: riscv32imac-unknown-none-elf, riscv32imc-unknown-none-elf, thumbv7em-none-eabi
+set(RUST_TARGET @ARCH@)
 
 set(RUST_TARGET_DIR "${PROJECT_SOURCE_DIR}/build")
 
