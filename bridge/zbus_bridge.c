@@ -3,9 +3,9 @@
  * @author Matheus T. dos Santos (tenoriomatheus0@gmail.com)
  * @brief
  * @version 0.1
- * @date 30/12/2022
+ * @date 22/01/2023
  *
- * @copyright Copyright (c) 2022
+ * @copyright Copyright (c) 2023
  *
  */
 #include <errno.h>
