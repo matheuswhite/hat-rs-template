@@ -7,9 +7,9 @@
 #include <zephyr/zbus/zbus.h>
 #include "bridge.h"
 
-#define WORK_QUEUE_STACK_SIZE 512
+#define WORK_QUEUE_STACK_SIZE MAX((NUM_OF_TASKS * 64), 128)
 #define WORK_QUEUE_PRIORITY 5
-#define OP_INFOS_MAX_SIZE 20
+#define OP_INFOS_MAX_SIZE (NUM_OF_TASKS + 1)
 
 typedef struct zbus_channel struct_zbus_channel;
 
