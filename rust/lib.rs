@@ -9,7 +9,7 @@ extern crate alloc;
 use core::time::Duration;
 use hat::*;
 
-#[hat_macros::entry]
+#[hat_macros::main]
 pub async fn main_task() -> TaskResult {
     loop {
         log!("Hello, World!");
